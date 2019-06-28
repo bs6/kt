@@ -24,3 +24,10 @@ hs_err_pid*
 
 # Gradle
 .gradle
+bin/
+build/
+
+# Eclipse
+.project
+.classpath
+.settings
