@@ -1,3 +1,4 @@
+
 buildscript {
     repositories {
             mavenCentral()
@@ -8,16 +9,28 @@ buildscript {
     }
 }
 
+plugins {
+}
+
 import org.gradle.api.Project
 import org.jetbrains.kotlin.gradle.plugin.KotlinPlatformJvmPlugin
+import org.gradle.kotlin.dsl.*;
 allprojects {
 	println(this)
 	//println(it)
 	apply<KotlinPlatformJvmPlugin>()
+//	apply<JavaLibraryPlugin>()
 	//apply(plugin = "kotlin")
 	
 	repositories {
 		mavenCentral()
+	}
+	
+	dependencies {
+	    println(this)
+        "implementation"(kotlin("stdlib-jdk8"))
+		
+		println(kotlin("stdlib-jvm8"))
 	}
 }
 
