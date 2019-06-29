@@ -15,10 +15,11 @@ plugins {
 import org.gradle.api.Project
 import org.jetbrains.kotlin.gradle.plugin.KotlinPlatformJvmPlugin
 import org.gradle.kotlin.dsl.*;
-allprojects {
+subprojects {
 	println(this)
 	//println(it)
 	apply<KotlinPlatformJvmPlugin>()
+	apply<ApplicationPlugin>()
 //	apply<JavaLibraryPlugin>()
 	//apply(plugin = "kotlin")
 	
