@@ -20,6 +20,7 @@ println(settings.rootProject::class)
 
 println(rootDir)
 include(":hello-world")
+include(":types")
 
 for (project in rootProject.children) {
 	val projectName = project.name;
